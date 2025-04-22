@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bias-Free Hiring</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="hiring.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bias-Free Hiring Platform</h1>
+        <p>Hire with fairness. Apply with confidence.</p>
+    </header>
+
+    <nav>
+        <div class="logo">BFHire</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- Dark Mode Toggle -->
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <input type="checkbox" id="darkModeCheckbox">
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-up">
+        <h2>Empowering unbiased recruitment with AI & anonymity</h2>
+        <!-- <button id="get-started">Get Started</button> -->
+
+        <section id="cv-upload-section">
+            <h3>Upload Your CV</h3>
+            <form id="cv-upload-form">
+                <input type="file" id="cv-file" name="cv" accept=".pdf,.doc,.docx" required />
+                <button type="submit">Submit CV</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- CV Upload Section -->
+
+    <section class="features" id="features">
+        <div class="feature-card" data-aos="fade-right">
+            <h3>Resume-Blind Applications</h3>
+            <p>We remove names, photos, and personal data to focus on skills and experience.</p>
+        </div>
+        <div class="feature-card" data-aos="zoom-in">
+            <h3>Bias Detection AI</h3>
+            <p>Our smart algorithms highlight unconscious biases and promote fairness.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-left">
+            <h3>Transparent Hiring</h3>
+            <p>Track your hiring pipeline with diversity insights and fair evaluation tools.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Bias-Free Hiring Platform. All rights reserved.
+    </footer>
+
+    <script src="hiring.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+</body>
+
+</html>
